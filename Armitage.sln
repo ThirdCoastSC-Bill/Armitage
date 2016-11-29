@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Armitage", "Armitage\Armitage.csproj", "{BA24AAA2-D002-4091-84E7-13538079AC5E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Armitage.Tests", "Armitage.Tests\Armitage.Tests.csproj", "{73263B5A-CFA1-44E3-9543-607162562E18}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BA24AAA2-D002-4091-84E7-13538079AC5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA24AAA2-D002-4091-84E7-13538079AC5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA24AAA2-D002-4091-84E7-13538079AC5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA24AAA2-D002-4091-84E7-13538079AC5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73263B5A-CFA1-44E3-9543-607162562E18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73263B5A-CFA1-44E3-9543-607162562E18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73263B5A-CFA1-44E3-9543-607162562E18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73263B5A-CFA1-44E3-9543-607162562E18}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

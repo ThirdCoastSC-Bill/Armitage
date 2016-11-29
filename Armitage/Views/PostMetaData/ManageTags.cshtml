@@ -1,0 +1,63 @@
+﻿@model Armitage.ViewModels.ManageTagsViewModel
+@{
+    ViewBag.Title = "ManageTags";
+}
+
+<h2>ManageTags</h2>
+
+
+
+
+<div>
+    <h2>Current Tags</h2>
+    <div>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Created On</th>
+                <th>Edit/Delete</th>
+            </tr>
+            @foreach (var tag in Model.Tags)
+            {
+                <tr>
+                    <td>@tag.Name</td>
+                    <td>@tag.Description</td>
+                    <td>@tag.CreatedOn.ToShortDateString()</td>
+                </tr>
+            }
+        </table>
+        
+    </div>
+</div>
+
+@*<div>
+        <h2>Add a New Tag</h2>
+        <form method="post">
+            <label>Name</label>
+            <input />
+            <label>Description</label>
+            <textarea cols="40" rows="4"></textarea>
+            <input type="submit" value="Create new tag" class="btn btn-success" />
+            @Html.AntiForgeryToken();
+        </form>
+    </div>*@
+
+<div>
+    @using (Html.BeginForm()){
+        @Html.ValidationSummary(true)
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Name)
+            @Html.EditorFor(model => model.Name)
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.Description)
+            @Html.EditorFor(model=>model.Description)
+        </div>
+        <div class="form-group">
+            <input type="submit" class="btn btn-success" />
+        </div>
+
+    }
+</div>

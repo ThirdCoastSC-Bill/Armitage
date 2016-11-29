@@ -1,0 +1,21 @@
+﻿@model List<Armitage.Models.Tag>
+<div class="row">
+    <div class="col-md-8">
+        <table class="table table-bordered">
+            <tr>
+                <th>Tag Display</th>
+                <th>Description</th>
+                <th>Created On</th>
+            </tr>
+            @foreach (var tag in Model)
+            {
+                <tr>
+                    <td>@tag.Name</td>
+                    <td>@tag.Description</td>
+                    <td>@tag.CreatedOn.ToShortDateString()</td>
+        </tr>
+
+            }
+        </table>
+    </div>
+</div>
