@@ -48,6 +48,7 @@ namespace Armitage.Controllers
         //GET:
         public PartialViewResult _CategoryList()
         {
+            ModelState.Clear();
             var model = _context.Categories.ToList();
             return PartialView(model);
         }
@@ -79,6 +80,11 @@ namespace Armitage.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult _AddCategory(Category model)
         {
+            Thread.Sleep(2500);
+            model.CreatedOn = DateTime.Now;
+
+            model.AddCategory();
+
             return RedirectToAction("_CategoryList");
         }
 
