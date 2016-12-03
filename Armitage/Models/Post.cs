@@ -13,6 +13,6 @@ namespace Armitage.Models
         public DateTime CreatedOn { get; set; }
         public DateTime PublishedOn { get; set; }
 
-        public ICollection<Tag> Tags { get; set; }
+        public virtual Category Category { get; set; }
     }
 }

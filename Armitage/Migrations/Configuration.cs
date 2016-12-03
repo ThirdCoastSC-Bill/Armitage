@@ -17,7 +17,7 @@ namespace Armitage.Migrations
         {
             //Tags DbSet
             context.Tags.AddOrUpdate(x => x.TagId,
-                new Tag() { TagId = 1, Name = "Food", Description = "COntent related to food.", CreatedOn = new DateTime(2016, 11, 1) },
+                new Tag() { TagId = 1, Name = "Food", Description = "Content related to food.", CreatedOn = new DateTime(2016, 11, 1) },
                 new Tag() { TagId = 2, Name="New York Times", Description="Content related to NYT.", CreatedOn = new DateTime(2016,11,1)}
 
             );

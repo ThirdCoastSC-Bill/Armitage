@@ -14,7 +14,7 @@ namespace Armitage.Models
         public string Description { get; set; }
         public DateTime CreatedOn { get; set; }
 
-        public ICollection<Post> Posts { get; set; }
+     
 
         public Tag()
         {
