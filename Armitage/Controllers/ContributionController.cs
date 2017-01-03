@@ -24,6 +24,23 @@ namespace Armitage.Controllers
             return View(model);
         }
 
+        //POST:
+        
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Pending(NewPostViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                model.Post.CreatedOn = DateTime.Now;
+                model.Post.PublishedOn = null;
+
+                _context.Posts.Add(model.Post);
+            }
+            
+            return RedirectToAction("Index");
+        }
+
 
     }
 }
